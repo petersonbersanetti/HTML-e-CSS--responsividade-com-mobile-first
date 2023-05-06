@@ -16,6 +16,7 @@
 }
 
 .banner__pesquisa{
+    text-align: center;
     background-color: transparent;
     border: 1px solid var(--branco);
     color: var(--branco);
@@ -32,4 +33,5 @@
     color: var(--fonte-principal);
     background: url(../img/Lupa.svg) no-repeat;
     background-position: 1em;
+    display: flex;
 }
