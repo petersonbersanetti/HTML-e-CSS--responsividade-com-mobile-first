@@ -49,11 +49,10 @@
 }
 
 .lista-menu__link{
-    background: var(--azul-degrade);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+
     text-transform: uppercase;
+    color: var(--azul-degrade);
+
 }
 
 .container__botao{
@@ -68,6 +67,7 @@
 
 
 @media screen and (min-width: 1024px) {
+
       .container__titulo, 
       .container__titulo--negrito{
         font-family: var(--fonte-secundario);
@@ -88,11 +88,12 @@
       }
 
       .opcoes__item{
-        padding: 0 1em;
+        padding: 1.9em 1em;
         text-transform: uppercase;
       }
 
       .opcoes__link{
+        padding: 1.9em 0;
         color: var(--preto);
       }
 
@@ -112,5 +113,26 @@
       .opcoes__botao{
         display: none;
       }
-    
-}
+                   
+      .opcoes_hover:hover,
+      .opcoes__item:hover{
+        background: var(--azul-degrade);
+        color: var(--branco);
+      }
+
+      .opcoes__item:hover a{
+        color: var(--branco);
+      }
+
+      .lista-menu__link:hover,
+      .lista-menu__item:hover{
+        background: var(--azul-degrade);
+        color: var(--branco);
+      }
+
+      .lista-menu__item:hover a{
+        color: var(--branco);
+      }
+
+
+  }
