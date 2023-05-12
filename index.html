@@ -60,10 +60,16 @@
             
         </ul>
 
-        <div class="container">
-        <a href="#"><img src="img/Favoritos.svg" alt="Meus Favoritos" class="container__imagem container__imagem-transparente"></a>
-        <a href="#"><img src="img/Sacola.svg" alt="Carrinho de compras" class="container__imagem"></a>
-        <a href="#"><img src="img/Usuario.svg" alt="Meu Perfil" class="container__imagem"></a>
+        <div class="container container_gap">
+        <a href="#"><img src="img/Favoritos.svg" alt="Meus Favoritos" class="container__imagem container__imagem-transparente">   
+        <a href="#" class="container__link">
+            <img src="img/Sacola.svg" alt="Carrinho de compras" class="container__imagem">
+            <p class="container__texto">Minha Sacola</p>
+        </a>
+        <a href="#" class="container__link">
+            <img src="img/Usuario.svg" alt="Meu Perfil" class="container__imagem">
+            <p class="container__texto">Meu Perfil</p>
+        </a>
         </div>
     </header>
     <section class="banner">
@@ -73,6 +79,7 @@
     </section>
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <div class="carrossel__container">
         <div class="swiper">
              <!-- If we need pagination -->
              <div class="swiper-pagination"></div>
@@ -99,7 +106,7 @@
             <!-- 1ª coluna -->
             <div class="card__descricao">
                 <div class="descricao">
-                    <h3 class="descricao__titulo">Talvez você se interesse por...</h3>
+                    <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
                     <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
                     <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
                 </div>        
@@ -121,10 +128,12 @@
             </div>
 
         </div>
+    </div>
     </section>
 
     <section class="carrossel">
         <h2 class="carrossel__titulo">Mais vendidos</h2>
+        <div class="carrossel__container">
         <div class="swiper">
              <!-- If we need pagination -->
              <div class="swiper-pagination"></div>
@@ -178,7 +187,7 @@
             </div>
 
         </div>
-
+    </div>
     </section>
 
     <section class="topicos">
