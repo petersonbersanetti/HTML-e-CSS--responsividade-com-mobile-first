@@ -64,6 +64,9 @@
     display: none;
 }
 
+.container__texto{
+  display: none;
+}
 
 
 @media screen and (min-width: 1024px) {
@@ -133,6 +136,32 @@
       .lista-menu__item:hover a{
         color: var(--branco);
       }
+}
 
-
+@media screen and (min-width: 1728px){
+  .cabecalho{
+    padding: 0 5em;
   }
+
+  .container__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--preto);
+
+    }
+
+  .opcoes{
+    margin-right: auto;
+    padding-left: 3.5em;
+    gap: 2em;
+  }
+
+  .container_gap{
+    gap: 0 3em;
+  }
+  
+  .container__texto{
+    display: block;
+  }
+}
